@@ -1,4 +1,4 @@
-#R code used in Tanner & Collins 2019 JCST 
+#"Using publicly-available long-term climate records in undergraduate interdisciplinary big data curriculum"
 #For distribution with curriculum described in above article, produces sample figures in article
 
 ####packages####
