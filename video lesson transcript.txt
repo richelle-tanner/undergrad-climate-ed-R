@@ -1,0 +1,558 @@
+WEBVTT
+
+1
+00:00:02.939 --> 00:00:19.530
+Lisa Collins: Morning science 10 I had some requests after yesterday's lab session. And so I want to walk you through how to bring your data into our and how to use the code that was provided for you. So the first thing we're going to do.
+
+2
+00:00:20.640 --> 00:00:21.210
+Lisa Collins: Is
+
+3
+00:00:23.040 --> 00:00:28.680
+Lisa Collins: You want to go to our shell and canvas and if you click on files.
+
+4
+00:00:31.650 --> 00:00:33.390
+Lisa Collins: You want to go to the
+
+5
+00:00:34.800 --> 00:00:38.220
+Lisa Collins: Folder labeled climate project useful instructions.
+
+6
+00:00:40.170 --> 00:00:53.550
+Lisa Collins: And then in here, you see this supplemental code JCS T. Are you want to click on that and when it comes up. You want to go ahead and download that code. Okay, so once you've downloaded the code in our
+
+7
+00:00:56.970 --> 00:01:01.410
+Lisa Collins: You can go ahead and open up our studio
+
+8
+00:01:06.450 --> 00:01:07.230
+Lisa Collins: So,
+
+9
+00:01:12.000 --> 00:01:12.930
+Lisa Collins: Show you that
+
+10
+00:01:15.690 --> 00:01:18.570
+Lisa Collins: To open up our studio and
+
+11
+00:01:19.650 --> 00:01:33.960
+Lisa Collins: Let's see. I think this is what we want this little folder here. So at the top of our studio, there's a plus and plus r and then this little folder. So you click on the little folder and you want to find
+
+12
+00:01:36.000 --> 00:01:47.100
+Lisa Collins: That code that we brought in supplemental code and you want to open that code. And so it opens up this new tab here at the top, the top left.
+
+13
+00:01:47.550 --> 00:02:01.260
+Lisa Collins: And what you're going to see in here. This is code that was written by one of my former students and she worked on this this project as well. And she wrote code for it. And this automates all of
+
+14
+00:02:02.220 --> 00:02:07.500
+Lisa Collins: The data analysis that we want to do with our data. And so, this includes
+
+15
+00:02:07.680 --> 00:02:19.080
+Lisa Collins: Statistical tests to tell whether or not the slope that we see in our team and the team, Max, whether or not it's significant. So there's a lot in here. So we're going to kind of walk through it and I'm going to show you what it all means.
+
+16
+00:02:19.770 --> 00:02:32.160
+Lisa Collins: But what you'll notice in here is that whenever there are these hashtag symbols. That's annotation, which basically means it's notes, it's notes by the person who wrote the code telling you what's there.
+
+17
+00:02:33.390 --> 00:02:45.060
+Lisa Collins: And how to get information from that code. All right, and that's why it's in that green color or a different color and the code itself is in in black and so
+
+18
+00:02:45.930 --> 00:03:02.340
+Lisa Collins: You see that the first thing you need to do is install these packages which only have to be done once and then the next several lines of code or to load those packages which has to be on every time that you open up and play and do our so I've done this, but I'll do it again.
+
+19
+00:03:03.390 --> 00:03:13.260
+Lisa Collins: To run just sections of the code. So if you want to and I highly recommend that you just instead of trying to run the whole thing all at once. You're going to get all kinds of errors back and I'll explain.
+
+20
+00:03:13.530 --> 00:03:15.390
+Lisa Collins: Where those errors are going to be and why they're there.
+
+21
+00:03:15.870 --> 00:03:25.560
+Lisa Collins: And you want to actually try to just run little chunks of the code at a time and then that way, at least as you're looking through it and trying to find out where are the errors and why are they, why are they there.
+
+22
+00:03:26.070 --> 00:03:32.820
+Lisa Collins: You have an idea of where to find them. If you own the whole thing and it spits back all these errors are you, it's really difficult to figure out
+
+23
+00:03:33.750 --> 00:03:44.310
+Lisa Collins: Where the errors are and what's causing them. If you're just running it a few lines at a time. You know, you might get down to line 70 or 83 in there and you're like, well, okay, cool. I've got 70 lines of good code.
+
+24
+00:03:45.450 --> 00:03:56.370
+Lisa Collins: Before I have any errors. Okay, so you just highlight where you want and then in the middle part of the box here you have run and you want to click on run um
+
+25
+00:03:59.340 --> 00:04:03.930
+Lisa Collins: Alright, it looks like our wants to restart and then continue. So let's try
+
+26
+00:04:09.930 --> 00:04:11.910
+Lisa Collins: So I'm going to pause
+
+27
+00:04:16.260 --> 00:04:16.710
+Lisa Collins: Alright.
+
+28
+00:04:18.900 --> 00:04:21.150
+Lisa Collins: Okay, be gentle. Okay.
+
+29
+00:04:23.640 --> 00:04:28.320
+Lisa Collins: So we've done that and now we want to load the packages will do that.
+
+30
+00:04:30.510 --> 00:04:36.300
+Lisa Collins: Alright so I'm missing some stuff in here and you can see because
+
+31
+00:04:37.710 --> 00:04:46.380
+Lisa Collins: Whenever things are done successfully the code in the box at the bottom here loads is blue, whenever there's a problem and
+
+32
+00:04:47.520 --> 00:04:54.030
+Lisa Collins: It comes up red so red is where you have errors in in here.
+
+33
+00:04:55.230 --> 00:05:00.990
+Lisa Collins: Okay so worked for that package. Now you see him running them just one at a time.
+
+34
+00:05:03.780 --> 00:05:05.100
+Lisa Collins: Which seems to be
+
+35
+00:05:06.810 --> 00:05:09.120
+Lisa Collins: Nice success. Okay.
+
+36
+00:05:10.260 --> 00:05:13.980
+Lisa Collins: So like I said, sometimes it helps to run the code just one piece at a time.
+
+37
+00:05:15.930 --> 00:05:16.410
+Lisa Collins: All right.
+
+38
+00:05:18.180 --> 00:05:28.080
+Lisa Collins: A few things that we're going to need to do in here. So we've loaded all of the packages and what these packages are one of the reasons why Microsoft Excel is
+
+39
+00:05:28.710 --> 00:05:42.570
+Lisa Collins: very user friendly is that it can do anything for you, but it takes a lot of computing power to do that. And it has all of that code running in the background, all the time, which is why if you've ever tried to plot.
+
+40
+00:05:42.990 --> 00:05:52.440
+Lisa Collins: A very large data set on Excel. Sometimes when you you input the data you literally have to sit and wait a few seconds, or if it's a really big data set, it might be
+
+41
+00:05:52.770 --> 00:06:07.260
+Lisa Collins: 10 or 15 or even 20 seconds before it actually plots for you. And the reason is, it has all that code running in the background. And so it uses up a lot of computing power to do that. So what's beautiful about our and why a lot of
+
+42
+00:06:08.100 --> 00:06:18.840
+Lisa Collins: scientists and biologists like to use our is that our is only doing exactly what you tell it. So it's only working with the packages that we just installed and told to us.
+
+43
+00:06:19.200 --> 00:06:28.260
+Lisa Collins: And so that allows it to actually compute and to run faster because it's only doing exactly what we tell it. So the other thing about our sort of on that same vein.
+
+44
+00:06:28.950 --> 00:06:41.880
+Lisa Collins: Is that our is only going to do exactly what you tell it to do. And so one of the reasons why when you all formatted your data last week that I was very particular and I tried to emphasize that you had to be very careful about what
+
+45
+00:06:42.420 --> 00:06:51.750
+Lisa Collins: Was uppercase and lowercase because when you bring into our if you make a mistake on the upper or lower case if you put your data into Excel.
+
+46
+00:06:52.080 --> 00:06:58.380
+Lisa Collins: And you did differently than what I said. So if you didn't use Why are per year. If you didn't use capital wire for a year.
+
+47
+00:06:58.770 --> 00:07:11.490
+Lisa Collins: The code is written using that information. So if you use something else. You're going to have to either rewrite the code or picture file because our will not find it and it will spit an error out
+
+48
+00:07:11.790 --> 00:07:29.460
+Lisa Collins: So at any point you're getting errors. I want you to just go back into your data and make sure that everything is labeled properly and then it matches up with the code. So the first thing we're going to actually do in our. This is line number 22 give me that that's not for you. Sorry.
+
+49
+00:07:32.100 --> 00:07:33.690
+Lisa Collins: Can you go find already, please.
+
+50
+00:07:37.230 --> 00:07:38.310
+Lisa Collins: Okay, so
+
+51
+00:07:39.750 --> 00:07:47.670
+Lisa Collins: Line here this DDR is pretty much telling our where to find your information. And so it's telling
+
+52
+00:07:48.120 --> 00:07:55.110
+Lisa Collins: Our that it's in the documents and that there's a folder named our data and then inside that our data is a folder name climate project.
+
+53
+00:07:55.470 --> 00:08:01.830
+Lisa Collins: Now that's not where my data lives. I don't think that's where anyone else's data lives. So you have to actually rename this folder.
+
+54
+00:08:02.460 --> 00:08:16.080
+Lisa Collins: So for me, my data actually is with me on my desktop. Because as you've seen, I like to put everything on my desktop. It is in a file called our code. And I think my our code is
+
+55
+00:08:17.670 --> 00:08:25.440
+Lisa Collins: Lowercase. Yep. And then inside my our code is a file that I have named temperature data.
+
+56
+00:08:31.800 --> 00:08:32.280
+Lisa Collins: Alright.
+
+57
+00:08:33.480 --> 00:08:34.050
+Lisa Collins: So,
+
+58
+00:08:35.400 --> 00:08:43.830
+Lisa Collins: The other thing that we need to do is that in multiple places it's going to tell our to create some new files.
+
+59
+00:08:44.220 --> 00:08:57.360
+Lisa Collins: And stick them in another folder for you, but it has all those files written as the the documents are data climate project. And if you don't have those folders or any computer ours going to
+
+60
+00:08:57.960 --> 00:09:05.310
+Lisa Collins: Sit back and error code to you because it can't find that place. Okay, so what we need to do is find all those places and
+
+61
+00:09:06.030 --> 00:09:15.300
+Lisa Collins: If you click up here on the top left hand corner, there's a little magnifying glass and so we can just look for the word documents.
+
+62
+00:09:16.110 --> 00:09:28.470
+Lisa Collins: And right so now you see the first place that pops up as lines 8788. And so what I'm going to do is actually copy, I go back to line 22 I'm going to copy
+
+63
+00:09:29.310 --> 00:09:42.480
+Lisa Collins: This line here, not the line, but the database and find the documents and I'm going to replace so that all my data goes exactly where I want it to go.
+
+64
+00:09:47.940 --> 00:09:56.910
+Lisa Collins: And you can see some of you may see I put an extra backspace in there that doesn't work. All right, let's see what else we have documents up. There's another one. Saving plots.
+
+65
+00:10:03.990 --> 00:10:06.810
+Lisa Collins: Alright, let's see if there's any more up there, some more.
+
+66
+00:10:09.330 --> 00:10:16.650
+Lisa Collins: And you could do the final replace of here if you want. If you don't want to do it this way. That's another way to make it go faster.
+
+67
+00:10:19.770 --> 00:10:22.980
+Lisa Collins: And I probably should have done that. But here we are.
+
+68
+00:10:24.690 --> 00:10:29.640
+Lisa Collins: There's not that many of them. We're getting near the end of the code.
+
+69
+00:10:33.570 --> 00:10:36.060
+Lisa Collins: Okay. Alright, so now
+
+70
+00:12:05.850 --> 00:12:06.870
+Lisa Collins: Okay, sorry.
+
+71
+00:12:10.440 --> 00:12:17.220
+Lisa Collins: I muted. Okay, so the next thing we're going to do. So if we've correctly found our
+
+72
+00:12:19.980 --> 00:12:34.020
+Lisa Collins: We've correctly sent our to the folder where our data lives. And I know that when you did your linear format of the data. Last week I told you to have one folder for two men and one for today, Max.
+
+73
+00:12:34.770 --> 00:12:43.680
+Lisa Collins: You actually want to merge those together. So all the data is in one place. So for me this is that temperature data.
+
+74
+00:13:29.580 --> 00:13:31.350
+Lisa Collins: Okay, so
+
+75
+00:13:34.950 --> 00:13:41.220
+Lisa Collins: All of your temperature data team NT Max, only it's been one folder together and not separated out
+
+76
+00:13:42.870 --> 00:13:46.260
+Lisa Collins: Everywhere in here that the code is
+
+77
+00:13:47.670 --> 00:13:49.200
+Lisa Collins: Grabbing code for city.
+
+78
+00:13:50.340 --> 00:14:00.600
+Lisa Collins: It's labeled city and then team X and city team. And so what we have to do is we need to replace the word city with the actual name of your city. So we're going to use that. Find and Replace button again.
+
+79
+00:14:01.170 --> 00:14:14.550
+Lisa Collins: So you put civvy into the find and then your replace it with the name of your first city. Make sure you match the case of the city. So for example, I took some data from Los Angeles.
+
+80
+00:14:15.180 --> 00:14:25.080
+Lisa Collins: And that's how I wrote Los Angeles I capitalized. My la mia and I had no space between them. And so you want to replace all and you
+
+81
+00:14:25.890 --> 00:14:41.070
+Lisa Collins: See that there's 115 places here, replacing that data. So you click on. Okay. And so now when it pulls the data, it's actually going to be able to pull one of your city files into our and start analyzing it, so
+
+82
+00:14:42.600 --> 00:14:57.600
+Lisa Collins: We're just going to go through and I'll show you. You want to, you know, highlight line and run. You want to tell our. This is where my data is kept this is how you get it. And then again, you're going to, you know, run the code. A couple lines at a time.
+
+83
+00:14:58.950 --> 00:15:04.380
+Lisa Collins: And remember that each time it tells you what's happening, what's going on.
+
+84
+00:15:15.180 --> 00:15:28.020
+Lisa Collins: Okay, there we go. So, you know, the first thing that you're doing is omitting those na rose. So in Excel. We put na in anywhere data was missing. And the reason we did that was because
+
+85
+00:15:28.800 --> 00:15:34.080
+Lisa Collins: When we converted from Fahrenheit two degrees Celsius. If you had left those cells blank. It would have
+
+86
+00:15:34.890 --> 00:15:45.180
+Lisa Collins: Made at zero degrees Celsius on the days that you're missing data. And that's just not the case, right, the data is missing. It's not actually zero degrees on those days.
+
+87
+00:15:45.750 --> 00:15:59.100
+Lisa Collins: And so you had to put nA N. And what that na allows for is now that we can have it in our it's going to recognize and just take out that data and again so much easier and faster to do it this way.
+
+88
+00:15:59.670 --> 00:16:06.450
+Lisa Collins: Than it would be for you to go through by hand and try to delete all those rows with that missing data in Excel.
+
+89
+00:16:07.710 --> 00:16:15.150
+Lisa Collins: So what I want you all to try doing is just try running the code, try running it. Just a few lines at a time.
+
+90
+00:16:15.480 --> 00:16:26.940
+Lisa Collins: And every time you're running the code. You want to sort of look and see what it's doing. So, you know, the first thing you did was you know appeared line 28 taking out the NA. The no data's
+
+91
+00:16:27.360 --> 00:16:40.770
+Lisa Collins: And then it makes a new data frame free of the NAS. And the reason it does that. Is that your raw data set stays intact and and we wanted to stay intact. In case you ever need to go back to the original file. If you think something got
+
+92
+00:16:41.820 --> 00:16:55.710
+Lisa Collins: Messed up or something. There was some sort of error somewhere. We want to make sure we have the raw original data. And so now it's made these files. These new Los Angeles team X and new Los Angeles team in these new files without that data.
+
+93
+00:16:56.400 --> 00:17:10.380
+Lisa Collins: Then it's going to find averages and standard deviations for us, it's going to calculate these climate anomalies. For us, it's like calculate your really averages. Right. So every time you go through and step through the live the code you're getting more and more data.
+
+94
+00:17:11.910 --> 00:17:25.290
+Lisa Collins: That's being analyzed for you. So what I want you to do again is just to try to work your way through this. Right. And the goal is to not have any errors.
+
+95
+00:17:25.770 --> 00:17:46.410
+Lisa Collins: But hopefully by running it. Just a few lines at a time and going through and changing. Like I said, changing the directions about where the data is actually held and then finding and replacing the city names that should should get rid of any errors that you would have
+
+96
+00:17:49.470 --> 00:18:00.450
+Lisa Collins: And, you know, do this when your brain is well rested and read some of the annotation to the code and you'll start to understand what we're trying to do with the data when you get down here.
+
+97
+00:18:17.550 --> 00:18:37.230
+Lisa Collins: Okay line 187, this is the point where you can actually stop. So at line 187. This is where we start to incorporate link to get to this point in the project. Some groups. Some people may get here and want to do this other groups may say I'm good with what we have.
+
+98
+00:18:38.430 --> 00:18:45.870
+Lisa Collins: The land use data, you know, one of the things we've talked about a lot in class, or at least we talked about the week that I was able to lecture, we talked about
+
+99
+00:18:46.440 --> 00:18:51.960
+Lisa Collins: urban heat islands. We talked about climate change. And so one of the things that really influences climate.
+
+100
+00:18:52.260 --> 00:19:03.630
+Lisa Collins: Is your proximity to the ocean, right, because we look at, and I can, I can tell you this already, without even looking at the data, almost all the coastal cities in Southern California and Northern California to
+
+101
+00:19:03.900 --> 00:19:15.360
+Lisa Collins: They're not going to show much climate change at all. And the reason is they're so close to the ocean. And so the ocean has a really strong influence on overall climate.
+
+102
+00:19:15.900 --> 00:19:25.320
+Lisa Collins: And what it is in the summertime as the air temperature heats up a lot of that heat is absorbed by the water and so instead of the land heating up more
+
+103
+00:19:25.530 --> 00:19:36.690
+Lisa Collins: That he goes into the water instead because water can absorb huge quantities of heat before the temperature of the water actually changes right water has a very high specific heat capacity and so
+
+104
+00:19:37.050 --> 00:19:49.440
+Lisa Collins: In the winter. The same is true as well. It doesn't get as cold in the coastal areas in the winter because a lot of heat is being released from the water from the ocean and it warms the air and it helps keep our temperatures on land warmer as well.
+
+105
+00:19:50.010 --> 00:19:57.480
+Lisa Collins: So what several climate scientists have been able to demonstrate and this is really true for parts of the Western United States.
+
+106
+00:19:57.960 --> 00:20:14.280
+Lisa Collins: Anywhere west of the Rocky Mountains. Agriculture is all irrigated nothing west of the Rocky Mountains crows without being watered right there's just not enough rainfall. It's really dry here in the western United States.
+
+107
+00:20:15.060 --> 00:20:23.100
+Lisa Collins: And so again, right, water has a really high specific key capacity. So what climate scientists have found is that when they look for urban heat island.
+
+108
+00:20:23.790 --> 00:20:31.770
+Lisa Collins: Very surprisingly they find these urban heat island see strong urban heat island signals from areas where there's a lot of it.
+
+109
+00:20:32.760 --> 00:20:45.390
+Lisa Collins: You're a good agriculture. So what's happening is that that water that's being put on to the fields to water them is acting like the ocean would act. And so what's happening is that
+
+110
+00:20:45.870 --> 00:20:51.330
+Lisa Collins: urban heat island. Remember that cities that have a lot of pavement.
+
+111
+00:20:52.290 --> 00:21:00.810
+Lisa Collins: Pavement like you know blacktop more than concrete because of the color that blacktop actually absorbs more heat unless it though. And so what happens is that
+
+112
+00:21:01.110 --> 00:21:09.780
+Lisa Collins: During the daytime and the maximum temperatures and get as high as you add more and more blacktop and then at nighttime that minimum temperature
+
+113
+00:21:10.020 --> 00:21:19.140
+Lisa Collins: starts to move up as well. So at night. It doesn't cool off as much. So that converging of the team in and team max on a daily basis.
+
+114
+00:21:19.920 --> 00:21:31.230
+Lisa Collins: As those two come together. That's really the signal for urban heat island saying that the team and the team max are found is, they found that urban heat island signal that merging of Tina Tina X in these areas where there's actually a lot of irrigation going
+
+115
+00:21:31.560 --> 00:21:35.190
+Lisa Collins: On. So a lot of agriculture and no big cities.
+
+116
+00:21:36.720 --> 00:21:44.970
+Lisa Collins: So starting in the code on line 187 what that actually does is that
+
+117
+00:21:46.770 --> 00:21:59.880
+Lisa Collins: There's code in there to take images from Google Earth just looking at the satellite bill video view actually not even Google Earth. You can use Google Maps and look at the satellite view.
+
+118
+00:22:00.420 --> 00:22:07.470
+Lisa Collins: And you can use another free program called image j and what you can do is you can
+
+119
+00:22:08.310 --> 00:22:19.320
+Lisa Collins: Look at these different cities and you can analyze to find out how much is urban area in the city or in an area versus agriculture rural area.
+
+120
+00:22:20.130 --> 00:22:25.800
+Lisa Collins: So that's, you know, another another part of the project that we hopefully we'll get to.
+
+121
+00:22:26.340 --> 00:22:35.850
+Lisa Collins: But certainly, we don't have to. So, you know, run your code. If you can get up to line you know 185 his last line of the regular code that would be amazing.
+
+122
+00:22:36.600 --> 00:22:45.720
+Lisa Collins: If you're, if you're running into really big errors and having problems with it, email me and let me know that you're having problems and we can do sort of a zoom conference.
+
+123
+00:22:46.950 --> 00:22:55.410
+Lisa Collins: Another really good place to look is if you keep getting the same error and you can't figure it out, but you want to try to figure out. You want to try to troubleshoot it yourself.
+
+124
+00:22:57.240 --> 00:23:01.650
+Lisa Collins: A really good place to look for it. I need to open up my
+
+125
+00:23:04.860 --> 00:23:05.430
+Lisa Collins: Sorry.
+
+126
+00:23:07.470 --> 00:23:10.530
+Lisa Collins: A good place to look for information.
+
+127
+00:23:14.040 --> 00:23:19.320
+Lisa Collins: Is a website called Stack Overflow and what you can do is you can
+
+128
+00:23:22.710 --> 00:23:24.480
+Lisa Collins: There it is. Stack Overflow.
+
+129
+00:23:27.420 --> 00:23:37.050
+Lisa Collins: You can take the error code that's being spit out from our and you can actually copy and paste it into Stack Overflow. This is a place where people can ask questions.
+
+130
+00:23:44.880 --> 00:23:56.070
+Lisa Collins: And so there's a really good chance that somebody has asked a question in Stack Overflow already and people who are really good at.
+
+131
+00:23:57.060 --> 00:24:08.820
+Lisa Collins: Doing computer coding will often go to stack overflow and answer these questions. So you don't even have to ask the question yourself. You can just look it up. And as you look through
+
+132
+00:24:09.450 --> 00:24:15.420
+Lisa Collins: What's been already answered in Stack Overflow, there's a really good chance you may find the answer to your question.
+
+133
+00:24:15.780 --> 00:24:23.250
+Lisa Collins: Our is programming language. And like any other language that you would use, the more that you spend time with it and work through it, the better you get at it.
+
+134
+00:24:23.550 --> 00:24:28.020
+Lisa Collins: And I think that that's just the hardest part is spending that time with it and
+
+135
+00:24:28.590 --> 00:24:40.650
+Lisa Collins: Actually sitting down with it and getting in there and trying to troubleshoot it and trying to figure it out. It can be frustrating, but the more time you spend with it, especially when you successfully figure things out.
+
+136
+00:24:42.480 --> 00:24:48.150
+Lisa Collins: I know I always feel like a boss lady. When I figure it out and get our to run code for me.
+
+137
+00:24:48.780 --> 00:24:54.000
+Lisa Collins: It's just beautiful. Everything comes up, blue and it does everything for you and you just feel like I'm awesome.
+
+138
+00:24:54.540 --> 00:25:05.400
+Lisa Collins: So hopefully this will help you get started, hopefully you can come back to the video if you need to and backup and sort of look at those instructions again and you know we'll continue on.
+
+139
+00:25:06.330 --> 00:25:15.840
+Lisa Collins: And figure out what we're doing. I'll figure out what we're doing next week and I'll let you know as soon as I figured that out. All right. Happy coding and let me know if you have questions.
+
