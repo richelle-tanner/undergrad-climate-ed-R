@@ -4,7 +4,9 @@ These files accompany the JCST article, "Using publicly-available long-term clim
 
 CSV files are example formats for the R code, and work as-is with the script. PDFs are example plots from the R code. Other documents are files used in the pilot for this course, and demonstrate rubrics, sample questions/answers, and instructions for downloading data.
 
+Accompanying video lesson for introductory R skills is available at https://youtu.be/sBBevrBvyHw (transcript available in this folder). 
+
 To download as zip, click the green "download" button in the righthand corner. To download individual files, click on the file and select download from the header.
 
 
-Last edit February 2020.
+Last edit April 2020.
